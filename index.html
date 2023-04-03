@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Loja Pé de Jogador</title>
+</head>
+
+<body>
+    <!--HEARDER-->
+    <header class="parte1">
+        <img class="img_logo" src="img/logo.png">
+        <nav class="parte2">
+            <a class="nav-link active" aria-current="page" href="#">Entrar</a>
+            <a class="nav-link active" aria-current="page" href="#">Registrar</a>
+            <a class="nav-link active" aria-current="page" href="#">Minha conta</a>
+            <a class="nav-link active" aria-current="page" href="#">Sobre nos</a>
+        </nav>
+    </header>
+    <div>
+        <div class="parte3">
+            <div style="display: flex; justify-content: space-between; width: 100%; gap: 10px;">
+                <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </div>
+            <button type="button" class="btn btn-secondary">
+                <svg style="width: 25px;" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 576 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                    <path
+                        d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z" />
+                </svg>
+            </button>
+        </div>
+        <!--CAIXA DE PESQUISA-->
+        <div class="parte4">
+            <div class="caixapesquisa">
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>Escolha a chuteira que deseja</option>
+                    <option value="1">Chuteira 1</option>
+                    <option value="2">Chuteira 2</option>
+                    <option value="3">Chuteira 3</option>
+                    <option value="3">Chuteira 4</option>
+                    <option value="3">Chuteira 5</option>
+                    <option value="3">Chuteira 6</option>
+                    <option value="3">Chuteira 7</option>
+                    <option value="3">Chuteira 8</option>
+                    <option value="3">Chuteira 9</option>
+                </select>
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>Escolha o tamanho</option>
+                    <option value="1">38</option>
+                    <option value="2">39</option>
+                    <option value="3">40</option>
+                    <option value="3">41</option>
+                    <option value="3">42</option>
+                    <option value="3">43</option>
+                    <option value="3">44</option>
+                    <option value="3">45</option>
+                    <option value="3">46</option>
+                </select>
+                <div class="input-group mb-3">
+                    <p class="textoparte4">Escolha o valor minimo</p>
+                    <span class="input-group-text">$</span>
+                    <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                    <span class="input-group-text">.00</span>
+                </div>
+                <div class="input-group mb-3">
+                    <p class="textoparte4">Escolha o valor minimo</p>
+                    <span class="input-group-text">$</span>
+                    <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                    <span class="input-group-text">.00</span>
+                </div>
+                <button type="button" class="btn btn-secondary">Procurar</button>
+            </div>
+            <!--CARROSSEL-->
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/propaganda1.jpg" class="d-block w-100" alt="Primeiro"
+                            style="border-radius: 10px;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/propaganda2.jpg" class="d-block w-100" alt="Segundo" style="border-radius: 10px;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/propaganda3.jpg" class="d-block w-100" alt="Terceiro"
+                            style="border-radius: 10px;">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <!--VENDAS-->
+        <div class="parte5">
+            <div style="flex-grow: 1; padding: 10px;">
+                <div
+                    style="display: grid; grid-gap: 20px; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
+                    <div class="card">
+                        <img class="img_card" src="img/chuteira1.webp" alt="">
+                        <div style="padding: 10px;">
+                            <p>Chuteira 1</p>
+                            <p>R$200,00 ou 12x de R$22,00</p>
+                            <img class="imgestrela" src="img/estrela4.jpg">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/chuteira2.jpeg" alt="" class="img_card">
+                        <div style="padding: 10px;">
+                            <p>Chuteira 2</p>
+                            <p>R$200,00 ou 12x de R$22,00</p>
+                            <img class="imgestrela" src="img/estrela4.jpg">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/chuteira3.webp" alt="" class="img_card">
+                        <div style="padding: 10px;">
+                            <p>Chuteira 3</p>
+                            <p>R$244,00 ou 12x de R$24,00</p>
+                            <img class="imgestrela" src="img/estrela3.png">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/chuteira4.webp" alt="" class="img_card">
+                        <div style="padding: 10px;">
+                            <p>Chuteira 4</p>
+                            <p>R$205,00 ou 12x de R$22,00</p>
+                            <img class="imgestrela" src="img/estrela3.png">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/chuteira8.jpg" alt="" class="img_card">
+                        <div style="padding: 10px;">
+                            <p>Chuteira 5</p>
+                            <p>R$260,00 ou 12x de R$26,00</p>
+                            <img class="imgestrela" src="img/estrela3.png">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/chuteira9.webp" alt="" class="img_card">
+                        <div style="padding: 10px;">
+                            <p>Chuteira 6</p>
+                            <p>R$200,00 ou 12x de R$22,00</p>
+                            <img class="imgestrela" src="img/estrela4.jpg">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/chuteira10.webp" alt="" class="img_card">
+                        <div style="padding: 10px;">
+                            <p>Chuteira 7</p>
+                            <p>R$300,00 ou 12x de R$30,00</p>
+                            <img class="imgestrela" src="img/estrela4.jpg">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/chuteira12.webp" alt="" class="img_card">
+                        <div style="padding: 10px;">
+                            <p>Chuteira 8</p>
+                            <p>R$399,00 ou 12x de R$39,00</p>
+                            <img class="imgestrela" src="img/estrela5.jpg">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/chuteira13.webp" alt="" class="img_card">
+                        <div style="padding: 10px;">
+                            <p>Chuteira 9</p>
+                            <p>R$210,00 ou 12x de R$24,00</p>
+                            <img class="imgestrela" src="img/estrela3.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--ANUNCIO-->
+
+
+            <div class="anuncio">
+                <div class="card_anuncio">
+                    <img class="img_anuncio" src="img/meia1.webp" alt="chuteira 1">
+                    <p>Compre agora as meias NIMBUS 2000</p>
+                    <img class="imgestrela" src="img/estrela5.jpg" alt="">
+                </div>
+                <div class="card_anuncio">
+                    <img class="img_anuncio" src="img/meia2.jpg" alt="chuteira 1">
+                    <p>Compre agora as meias NIMBUS 2000</p>
+                    <img class="imgestrela" src="img/estrela5.jpg" alt="">
+                </div>
+                <div class="card_anuncio">
+                    <img class="img_anuncio" src="img/meia5.jpg" alt="chuteira 1">
+                    <p>Compre agora as meias NIMBUS 2000</p>
+                    <img class="imgestrela" src="img/estrela5.jpg" alt="">
+                </div>
+                <div class="card_anuncio">
+                    <img class="img_anuncio" src="img/meia6.jpg" alt="chuteira 1">
+                    <p>Compre agora as meias NIMBUS 2000</p>
+                    <img class="imgestrela" src="img/estrela5.jpg" alt="">
+                </div>
+                <div class="card_anuncio">
+                    <label for="exampleFormControlInput1" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="ex@ex.com"
+                        style="width: 150px;">
+                    <button type="button" class="btn btn-secondary" style="width: 150px;">Junte-se</button>
+                </div>
+            </div>
+        </div>
+        </main>
+        <footer class="footer">
+            <div class="card_footer">Forma de pagamento
+                <img class="img_footer" src="img/formas de pagamento.png" alt="">
+            </div>
+
+            <div class="card_footer">
+                <p>Links rapidos</p>
+                <a href="https://www.google.com">Site apoiador (Google)</a>
+                <a href="https://www.facebook.com">Site apoiador (Facebook)</a>
+            </div>
+
+            <div class="card_footer">Redes sociais
+                <img class="img_footer" src="img/redes sociais.webp" alt="">
+            </div>
+
+            <div class="card_footer">
+                <p>Contatos</p>
+                <p>Ligue para (31)9898-0007</p>
+                <p>Endereço: Rua Paralelo, 244, Bairro Ouro Branco</p>
+            </div>
+        </footer>
+</body>
+
+</html>
